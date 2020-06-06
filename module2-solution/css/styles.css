@@ -3,13 +3,13 @@
     box-sizing: border-box;
 }
 .row{
-width:100%;
+	width:100%
 }
 h4{
 text-align:center;
 font-size:15pt;
-
 }
+
 h1{
 width:100px;
 border: 2px solid black;
@@ -30,7 +30,6 @@ position:relative;
 float: right;
 bottom: 23px;
 left:6px;
-background-color:red;
 }
 h3{
 width:100px;
@@ -41,47 +40,56 @@ position:relative;
 float: right;
 bottom: 27px;
 left:6px;
-background-color:pink;
+
 }
+
 @media (min-width: 992px) {
   .col-lg-4 {
     float: left;
     border: 2px solid black;
     width:31%;
     padding: 5px;
-     margin-right:4px;
+    margin-right:4px;
+    
     
 }
 }
 @media (min-width:768px) and (max-width:991px){
-	
-	.col-md-6{
+	.col-md-6, .col-md-12{
 		float:left;
 		border: 2px solid black;
-	    	width:48%;
-        	padding: 5px;
-    		margin-right:4px;
+	    
+        padding: 5px;
+        margin-right:4px;
         margin-bottom:4px;
-	}
-	.col-md-12{
-		float:left;
-		border: 2px solid black;
-	    	width:100%;
-        	padding: 5px;
-    		margin-right:4px;
-        margin-bottom:4px;
-	}
-		
-}
+       }
+     .col-md-6{
+     width:48%;
+     }
+     .col-md-12 {
+    width: 100%;
+  }
 
+    
+    
+    
+    
+}
+}
 @media (max-width: 767px){
-	.col-sm-12{
-		float:left;
+	.col-sm-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+ 	float: left;
+    float:left;
 		border: 2px solid black;
-		width=100%;
-		padding: 5px;
-    		margin-bottom:4px;
+	
+	padding: 5px;
+    margin-bottom:4px;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+}
 }
 }
 </style>
-
