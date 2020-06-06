@@ -41,7 +41,7 @@ left:6px;
 
 }
 @media (min-width: 992px) {
-  .col-lg-3 {
+  .col-lg-4 {
     float: left;
     border: 2px solid black;
     width:31%;
@@ -51,17 +51,27 @@ left:6px;
 }
 }
 @media (min-width:768px) and (max-width:991px){
-	.col-md-2{
+	.col-md-6{
 		float:left;
 		border: 2px solid black;
 	    	width:48%;
         	padding: 5px;
     		margin-right:4px;
         margin-bottom:4px;
+	}
+	.col-md-12{
+		float:left;
+		border: 2px solid black;
+	    	width:98%;
+        	padding: 5px;
+    		margin-right:4px;
+        margin-bottom:4px;
+	}
+		
 }
-}
+
 @media (max-width: 767px){
-	.col-sm-1{
+	.col-sm-12{
 		float:left;
 		border: 2px solid black;
 		width=98%;
