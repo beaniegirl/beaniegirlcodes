@@ -1,6 +1,8 @@
 <style>
 *{
 	box-sizing: border-box;
+	background-color: grey
+	border: 1px black
 }
 	
 @media (min-width: 992px) {
