@@ -2,6 +2,13 @@
 * {
     box-sizing: border-box;
 }
+.row{
+width:100%;
+}
+h4{
+text-align:center;
+
+}
 h1{
 width:100px;
 border: 2px solid black;
@@ -19,7 +26,7 @@ font-size: 15pt;
 text-align:center;
 position:relative;
 float: right;
-bottom: 25px;
+bottom: 23px;
 left:6px;
 }
 h3{
@@ -37,30 +44,29 @@ left:6px;
   .col-lg-3 {
     float: left;
     border: 2px solid black;
-    width:33%;
+    width:31%;
     padding: 5px;
-    margin: 5px;
-    box-sizing: border-box;
+     margin-right:4px;
+    
 }
 }
 @media (min-width:768px) and (max-width:991px){
 	.col-md-2{
 		float:left;
 		border: 2px solid black;
-	    	width:50%;
+	    	width:48%;
         	padding: 5px;
-    		margin: 5px;
-    		box-sizing: border-box;
+    		margin-right:4px;
+        margin-bottom:4px;
 }
 }
 @media (max-width: 767px){
 	.col-sm-1{
 		float:left;
 		border: 2px solid black;
-		width=100%;
+		width=98%;
 		padding: 5px;
-    		margin: 5px;
-    		box-sizing: border-box;
+    		margin-bottom:4px;
 }
 }
 </style>
