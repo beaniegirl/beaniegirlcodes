@@ -47,10 +47,10 @@ left:6px;
 	.col-md-2{
 		float:left;
 		border: 2px solid black;
-	    width:50%;
-        padding: 5px;
-    margin: 5px;
-    box-sizing: border-box;
+	    	width:50%;
+        	padding: 5px;
+    		margin: 5px;
+    		box-sizing: border-box;
 }
 }
 @media (max-width: 767px){
@@ -58,9 +58,10 @@ left:6px;
 		float:left;
 		border: 2px solid black;
 		width=100%;
-	padding: 5px;
-    margin: 5px;
-    box-sizing: border-box;
+		padding: 5px;
+    		margin: 5px;
+    		box-sizing: border-box;
+}
 }
 </style>
 
