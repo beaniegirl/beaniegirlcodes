@@ -6,3 +6,9 @@
 #nav-list {
   margin-top: 10px;
 }
+#nav-list a{
+  color: aqua;
+}
+#nav-list a:hover{
+  background: aqua;
+}
