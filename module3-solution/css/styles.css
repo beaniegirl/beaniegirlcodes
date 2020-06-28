@@ -1,8 +1,9 @@
 #headernav{
-  background-color: blue;
+  background-color: grey;
   border-radius: 0;
   border: 0;
   width: auto;
+  color: white;
 }
 #nav-list {
   margin-top: 10px;
