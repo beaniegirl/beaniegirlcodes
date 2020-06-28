@@ -8,6 +8,7 @@
 }
 #nav-list a{
   color: aqua;
+  text-align: center;
 }
 #nav-list a:hover{
   background-color: aqua;
