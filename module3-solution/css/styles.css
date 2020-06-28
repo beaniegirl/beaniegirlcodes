@@ -5,9 +5,9 @@
 }
 #nav-list {
   margin-top: 10px;
+  text-align: center;
 }
 #nav-list a{
-  
   text-align: center;
 }
 #nav-list a:hover{
