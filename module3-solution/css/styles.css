@@ -1,5 +1,8 @@
-#navbar-header{
+.navbar-header{
   background-color: grey;
   border-radius: 0;
   border: 0;
+}
+#nav-list {
+  margin-top: 10px;
 }
