@@ -13,3 +13,7 @@
 #nav-list a:hover{
   background-color: aqua;
 }
+
+.jumbotron{
+  margin-top: 10px;
+}
