@@ -2,6 +2,7 @@
   background-color: blue;
   border-radius: 0;
   border: 0;
+  width: auto;
 }
 #nav-list {
   margin-top: 10px;
