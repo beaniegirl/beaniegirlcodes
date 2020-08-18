@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>Rebeca Monis</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lexend Exa' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Welcome to my page!</h1>
+
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="game.html">Game</a></li>
+    <li><a href="form.html">Feedback</a></li>
+  </ul>
+  
+  <canvas id ="gameCanvas" width="1400" height="1000" style="z-index:1"></canvas>
+  <button id="button" style="z-index:2; position:absolute; top:x; left:y">Play</button>
+<script>
+  var canvas;
+  var canvasContext;
+  var ballX= 400;
+  var ballY=100;
+  var ballSpeedX=10;
+  var ballSpeedY=10;
+  var paddle1X=750;
+  var score=0; 
+  var screen=true;
+  var speed =50;
+
+  function mousepos(evt){
+    
+    var rect= canvas.getBoundingClientRect();
+    var root=document.documentElement;
+  // if (canvas.width<700){
+    var mouseX= evt.clientX - rect.left - root.scrollLeft;
+    var mouseY= evt.clientY - rect.top - root.scrollTop;
+    return{
+      x:mouseX,
+      y:mouseY
+    };
+  }
+  window.onload=function(){
+    canvas=document.getElementById('gameCanvas');
+    canvasContext=canvas.getContext('2d');
+    canvasContext.font="40px";
+    drawrect('rgb(0,0,0.8,0.7)',100,0,canvas.width,canvas.height);
+    document.getElementById("button").onclick=function(){screenON()};
+
+    canvas.addEventListener('mousemove',function(evt){
+      var mousePos= mousepos(evt); 
+      if (mousePos.x>440 && mousePos.x<1060){
+
+      paddle1X= mousePos.x-35;
+      
+      }
+      });
+      
+      setInterval(function(){move();drawEverything()},speed);
+
+    
+  }
+ 
+  function screenON(){
+    screen=false;
+    score=0;
+    document.getElementById("button").innerHTML="Stop";
+
+    document.getElementById("button").onclick=function(){screenOFF()};
+  }
+  function screenOFF(){
+    screen=true;
+    
+    canvasContext.fillStyle="white";
+    
+    document.getElementById("button").innerHTML = "Play";
+    
+    document.getElementById("button").onclick=function(){screenON()};
+  }
+  function drawrect(color,x,y,width,height){
+    canvasContext.fillStyle=color;
+    canvasContext.fillRect(x,y,width,height);
+  }
+  function drawcircle(color,xc,yc,r,startang,endang,dir){
+    canvasContext.fillStyle=color;
+    canvasContext.beginPath();
+    canvasContext.arc(xc,yc,r,startang,endang,dir);
+    canvasContext.fill();
+
+  }
+  function drawEverything(){
+
+
+    drawrect('black',400,100,700,400);
+    if (screen){
+
+      return;
+
+
+    }
+    drawcircle('blue',ballX,ballY,10,0,Math.PI*2,true);
+
+    drawcircle('white',paddle1X+35,465,35,0,Math.PI,false);
+    
+    drawrect('white',paddle1X,100,70,10);
+    canvasContext.font="30px Georgia";
+    canvasContext.fillText(score,1070,125);
+    
+  }
+  function ballreset(){
+    
+    ballX=410;
+    ballY=110;
+    ballSpeedY=-ballSpeedY;
+    ballY+=ballSpeedY;
+    
+  }
+
+  function move(){
+    if (screen){
+      
+      return;
+    }
+
+    ballX+=ballSpeedX;
+    ballY+=ballSpeedY;
+    if (ballX>=1100){
+      ballSpeedX=-ballSpeedX;
+      ballX+=ballSpeedX;
+    }
+    if(ballX<=400){
+      ballSpeedX=-ballSpeedX;
+      ballX+=ballSpeedX;
+    } 
+    if (ballY>=500){
+      if ((ballX>paddle1X) &&(ballX<(paddle1X+70)))
+      {
+        
+        score++;
+        ballSpeedY=-ballSpeedY;
+        ballY+=ballSpeedY;
+
+      }
+      else{
+        score=0;
+        ballreset();
+        
+    }
+  }
+    if (ballY<=100){
+      
+      if ((ballX>paddle1X) &&(ballX<(paddle1X+70))){
+        ballSpeedY=-ballSpeedY;
+        ballY+=ballSpeedY;
+        while (ballX>440 && ballX>1160){
+          var deltax =ballX-(paddle1X+35);
+          ballSpeedX= deltax*0.35;
+        }
+      }
+      else{
+        score=0;
+        ballreset();
+
+      }
+
+    }
+  }
+
+</script>
+	
+        
+  </body>			
+
+
+
+  </html>

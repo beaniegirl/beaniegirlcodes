@@ -1,0 +1,212 @@
+@media screen and (max-width: 950px) {
+
+  .right{
+    position: relative;
+    width: 100%;
+}
+}
+body {
+    font-family: 'Lexend Dexa';
+    color: #333;
+    font-size: 0.95em;
+  	background-image: url(https://images.cdn2.stockunlimited.net/preview1300/textured-dark-grey-background_1441440.jpg);
+  	background-color: #1c1c1c;
+    background-repeat: no-repeat;
+  	background-size: cover;
+
+  }
+
+  h1{
+
+    width:100%;
+  	font-family: 'Lexend Deca';
+    font-size: 4em;
+    text-align: center;
+    color: #c5c5c5;
+    margin-right: auto;
+    margin-left: auto;
+  }
+ul{
+  width: 80vw;
+  height: 5vh;
+}
+  li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+    float:left;
+    display: inline;
+    width: 10vw;
+    text-align:center;
+    font-family: Courier;
+    font-size: 1.5em;
+    position: relative;
+
+  }
+
+  a {
+    display: block;
+    padding: 8px;
+    background-color: #696969;
+    text-decoration:none;
+    color: blue;
+
+  }
+  li a:hover {
+    background-color: #111;
+    color: fuchsia;
+  }
+  .top {
+  	background: rgb(0,0,0.8,0.7);
+    /*background-color: #373737;*/
+    opacity: 0.8;
+  	position: relative;
+    size:40%;
+  	float: left;
+  	padding: 30px;
+  	color: white;
+  	font-size:1.3em;
+  	font-family: 'Lexend Deca';
+    margin-left: 2vw;
+    width: 60%;
+  	height: 120vh;
+
+  }
+  .right {
+    background-color: #ffffff;
+    opacity: 0.8;
+    text-align: center;
+    width: 20vw;
+  	height: 40vh;
+    font-size:1.3em;
+  	font-family: 'Lexend Deca';
+    position: fixed;
+    right: 5vw;
+    /*top: 200px;*/
+  	padding: 30px;
+
+  }
+  .right p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+  }
+  .right a{
+    padding: 8px;
+    background-color: #696969;
+    text-decoration:none;
+    text-align:center;
+    font-family: 'Lexend Deca';
+  }
+  .right a:hover {
+    background-color: #111;
+    color: fuchsia;
+  }
+
+
+  .colours{
+  text-align: center;
+  	position:relative;
+  	top: -30px;
+  	right: 225px;
+  	font-family: serif;
+      font-size: 1.3em;
+  	color: black;
+  	float:right;
+  	width: 60px;
+  	height: 50px;
+  	background-color: #dddddd;
+  }
+  .center{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+  }
+
+.tables{
+  margin: auto;
+}
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: white;
+  }
+
+  td:hover {
+    background-color:#f5f5f5;
+    color: blue;
+
+  }
+button{
+  top: 230px;
+  right: 500px;
+  color:black;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family:'Pangolin',cursive;
+
+}
+button:hover{
+  background-color: black;
+  color: green;
+}
+
+.form-head {
+    color: #ffffff;
+    font-weight: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+.demo-table {
+    background: #404040;
+    border-spacing: initial;
+    word-break: break-word;
+    table-layout: auto;
+    line-height: 1.8em;
+    color: #ffffff;
+    font-size: 1.1em;
+    border-radius: 7px;
+    padding: 20px 40px;
+    width: 380px;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    top:30px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vw;
+
+}
+
+
+
+.demo-table .field-column {
+    padding: 15px 0px;
+}
+
+.input-box {
+    padding: 13px;
+    border: #CCC 1px solid;
+    border-radius: 4px;
+    width: 100%;
+    
+}
+
+.btnRegister {
+    padding: 13px;
+    background-color: #5d9cec;
+    color: #f5f7fa;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    border: #5791da 1px solid;
+    font-size: 1.1em;
+}
